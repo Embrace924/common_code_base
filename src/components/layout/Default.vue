@@ -1,6 +1,12 @@
 <!-- 默认布局 -->
 <template>
     <div class="layout-default">
+        <div id="nav">
+            <router-link :to="`/${item}`"
+                         :key="item"
+                         v-for=" item in arr"> {{item}}|
+            </router-link>
+        </div>
         <transition name="fade">
             <router-view />
         </transition>
@@ -10,7 +16,13 @@
 
 export default {
     name: 'DefaultLayout',
-    components: {}
+    components: {},
+    data() {
+        return {
+            arr: ['TipData']
+
+        }
+    },
 };
 </script>
 <style lang="less"
@@ -18,6 +30,8 @@ export default {
 .layout-default {
     overflow-x: hidden;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .fade-enter-active, .fade-leave-active {

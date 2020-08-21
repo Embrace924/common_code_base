@@ -1,6 +1,18 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+
+let Arr = [
+    'TipData'
+]
+let elementRoutes = Arr.map(e => {
+    return {
+        path: `/${e}`,
+        name: `${e}`,
+        component: () => import(/* webpackChunkName: "about" */ `./views/${e}.vue`)
+    }
+})
+
 Vue.use(Router);
 
 export default new Router({
@@ -17,7 +29,8 @@ export default new Router({
                     path: '/hello-world',
                     name: 'HelloWorld',
                     component: () => import('./views/HelloWorld.vue')
-                }
+                },
+                ...elementRoutes,
             ]
         },
         {

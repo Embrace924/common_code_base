@@ -15,7 +15,7 @@
         "stylelint:fix": "stylelint src/**/*.{html,vue,css,less} --fix"
     },
     "dependencies": {
-         "@babel/core": "^7.9.0",
+        "@babel/core": "^7.9.0",
         "@vue/cli-plugin-babel": "^4.3.1",
         "@vue/cli-plugin-eslint": "^4.3.1",
         "@vue/cli-plugin-router": "^4.3.1",
