@@ -2,9 +2,9 @@
  * Created by lsh on 2020/6/30.
  */
 // css 需要的固定样式 文件
-import '../css/loading.css';
+import './loading.css';
 // 转动的图svg效果
-import segma_loading from '../image/loading.svg';
+import segma_loading from './loading.svg';
 
 function getElementStyle(obj, attr) {
     if (obj.currentStyle) {
