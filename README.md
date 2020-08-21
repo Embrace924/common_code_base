@@ -1,10 +1,10 @@
-# segma前端模板项目
+# 前端模板项目
 
 ## 更新操作
 本项目更新请强制同步：https://gitee.com/realucas/vue_template
 
 ## 项目说明
-本项目是关于西格马前端团队使用Vue开发项目的模板项目。  
+本项目是前端团队使用Vue开发项目的模板项目。
 更多请见：[vue_template](https://github.com/LucasGoodman/vue_template)
 
 ## 运行前须知
@@ -74,14 +74,6 @@ npm run stylelint:fix
  ]
 ```
 
-### SonarScanner检查工具
-```shell script
-npm run sonar
-```
-
-**SonarScanner检查工具说明：**  
-[详细说明](https://docs.qq.com/doc/DUmVNQ3JDSEZNRWlU)
-
 ## 私有化部署
 1. 将`.env.privatization`Vue应用环境变量文件中的需要动态变化的参数改为`变量名=#变量名`的形式。
 2. 在`Dockerfile.privatization`文件中添加docker运行环境变量。
@@ -93,7 +85,5 @@ docker run --name DOCKER_NAME -p 8080:80 -e VUE_APP_TEST=TEST  -d IMAGE_NAME:TAG
 ```
 **默认nginx代理地址可通过`VUE_APP_SERVER_URL`变量配置，路径格式为完整url，如`http://27.0.0.1`（地址结尾请勿加`/`）**
 
-## 开发规范
-[SEGMA技术团队-前端开发规范](https://docs.qq.com/doc/DUnVnY0RnemhEdnpC)
 
 

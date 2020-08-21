@@ -34,7 +34,7 @@ module.exports = {
     },
     productionSourceMap: false,
     devServer: {
-        port: 8091,
+        port: 8080,
         open: true,
         proxy: {
             '/api-local': {
